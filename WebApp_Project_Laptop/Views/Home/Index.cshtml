@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Premium Laptop Seller</h1>
+        <p class="lead">At Digital Retailers,we are driven to Provide our Customers With best possible deals on all ranges of laptop.</p>
+
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Gaming Laptops</h2>
+            <p>
+                Level up your gaming experience with our Curated selection of high-performance Gaming Laptops! Dive into immersive graphics,lightning-fast processing, and portable power.Shop now for the ultimate gaming compainion and redefine howyou play.
+            </p>
+            <p>@Html.ActionLink("Gaming Laptops", "Index", "GamingLaptops", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Student Laptops</h2>
+            <p> Transform your workday with our curated collection of student laptops.Elevent productivity with sleek design,powerful processing and reliable performance.Shop now for professional-grade laptops</p>
+            <p>@Html.ActionLink("Student Laptops", "Index", "StudentLaptops", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Thin&Light Laptops</h2>
+            <p>Discover the perfect blend of power and portability with our selection of thin and light laptops.Streamline your lifestyle with sleek design and impressive performance.Shop now for a laptop that effortlessly combines style and functionality</p>
+            <p>@Html.ActionLink("Thin&Light Laptops", "Index", "ThinLightLaptops", new { area = "" }, new { @class = "btn btn-outline-dark" })</p>
+        </section>
+    </div>
+</main>
